@@ -1,20 +1,22 @@
 import { createVuetify } from 'vuetify'
 import { darkTheme } from '@/assets/themes/darkTheme'
 import { lightTheme } from '@/assets/themes/lightTheme'
+import { componentsStyle } from '@/assets/themes/components'
 
-export default defineNuxtPlugin((app) => {
+export default defineNuxtPlugin((nuxtApp) => {
   const vuetify = createVuetify({
     ssr: true,
-    defaults: {},
-    // add theme
-    // theme: {
-    //   defaultTheme: 'lightTheme',
-    //   themes: {
-    //     light: lightTheme,
-    //     dark: darkTheme,
-    //   },
-    // },
+    theme: {
+      defaultTheme: 'lightTheme',
+      themes: {
+        lightTheme,
+        darkTheme,
+      },
+    },
+    defaults: {
+      ...componentsStyle,
+    },
   })
 
-  app.vueApp.use(vuetify)
+  nuxtApp.vueApp.use(vuetify)
 })
