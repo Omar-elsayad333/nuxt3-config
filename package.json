@@ -16,8 +16,10 @@
     "sass": "^1.69.5",
     "unplugin-icons": "^0.18.1",
     "unplugin-vue-components": "^0.26.0",
+    "vite-plugin-vuetify": "^2.0.1",
     "vue": "^3.3.10",
-    "vue-router": "^4.2.5"
+    "vue-router": "^4.2.5",
+    "vuetify": "^3.4.7"
   },
   "dependencies": {
     "@ant-design/icons-vue": "^7.0.1",

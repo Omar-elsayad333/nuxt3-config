@@ -13,14 +13,13 @@
 </template>
 
 <script setup>
-// const { locale } = useI18n()
-const switchLocalePath = useSwitchLocalePath()
 const localePath = useLocalePath()
+const switchLocalePath = useSwitchLocalePath()
 
 </script>
 
 <style lang="scss" scoped>
 .test-component {
-    color: $red
+    color: $secondary
 }
 </style>
