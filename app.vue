@@ -12,7 +12,7 @@
 import { useTheme } from 'vuetify'
 import { watch, onBeforeMount } from 'vue'
 
-const theme = useTheme()
+const theme = useTheme()  
 const { locale } = useI18n()
 
 const toggleTheme = () => {
