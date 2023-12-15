@@ -1,3 +1,4 @@
 {
-    "hello": "welcome"
+  "hello": "welcome",
+  "email is a required field": "omar"
 }
