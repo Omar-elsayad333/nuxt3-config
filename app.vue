@@ -2,7 +2,6 @@
   <v-theme-provider tag="main" with-background class="pa-10">
     <v-locale-provider fallback-locale="ar" :locale="locale" :rtl="locale === 'ar'">
       <NuxtLayout>
-        <v-btn @click="toggleTheme">toggle theme</v-btn>
         <NuxtPage />
       </NuxtLayout>
     </v-locale-provider>
